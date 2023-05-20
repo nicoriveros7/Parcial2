@@ -1,39 +1,47 @@
+<h1>Partidos del Mundial Qatar 2022</h1>
 <div class="container">
   <div class="row">
-      <div class="col">
-          <table class="table table-striped table-bordered">
-              <thead class="thead">
-                 <tr>
-                    <th>Home Team</th>
-                    <th>Away Team</th>
-                    <th>Date Time</th>
-                    <th>Stage Name</th>
-                    <th>Winner</th>
-                    <th>Status</th>
-                 </tr>
-              </thead>
-              <tbody>
-                <tr *ngFor= "let c of partidos">
-                  <td>
-                    <dd>{{c.home_team.name}}</dd>
-                  </td>
-                  <td>
-                    <dd>{{c.away_team.name}}</dd>
-                  </td>
-                  <td>
-                    <dd>{{c.datetime}}</dd>
-                  </td>
-                  <td>
-                    <dd>{{c.stage_name}}</dd>
-                  </td>
-                  <td>
-                    <dd>{{c.winner}}</dd>
-                  </td>
-                  <td>
-                    <dd>{{c.status}}</dd>
-                  </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+    <div class="col">
+      <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th>Date Time</th>
+            <th>Stage Name</th>
+            <th>Winner</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of partidos">
+            <td>{{ c.home_team.name }}</td>
+            <td>{{ c.away_team.name }}</td>
+            <td>{{ c.datetime }}</td>
+            <td>{{ c.stage_name }}</td>
+            <td>{{ c.winner }}</td>
+            <td>{{ c.status }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Países con más goles marcados de local</h2>
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th>País</th>
+        <th>Goles</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pais of golesPorPais">
+        <td>{{ pais.pais }}</td>
+        <td>{{ pais.goles }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

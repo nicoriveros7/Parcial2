@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { PartidoModule } from './partido/partido.module';
 import { HomeTeamModule } from './homeTeam/homeTeam.module';
 import { AwayTeamModule } from './awayTeam/awayTeam.module';
+import { EquipoModule } from './equipo/equipo.module';
+
+
 
 @NgModule({
   declarations: [
@@ -18,7 +21,8 @@ import { AwayTeamModule } from './awayTeam/awayTeam.module';
     PartidoModule,
     HomeTeamModule,
     AwayTeamModule,
-    HttpClientModule
+    HttpClientModule,
+    EquipoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
