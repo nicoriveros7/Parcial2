@@ -1,3 +1,9 @@
+.heading::before {
+  background-image: url('https://statics.forbesargentina.com/2022/12/63a1aa1a03e69.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .container {
   margin-top: 20px;
 }
